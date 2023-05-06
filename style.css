@@ -1,0 +1,407 @@
+/*-----------Body----------*/
+
+
+body {
+    height: 100vh;
+    background-color: #122C34;
+
+}
+
+.container {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+
+/*----------nav------------*/
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    background-color: #122C34;
+    z-index: 2;
+}
+
+.ulclass {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/*_________rendre responsive la navbar__________*/
+@media screen and (max-width: 700px) {
+    .ulclass {
+        display: none;
+    }
+}
+
+/*_______________________________________________*/
+
+.menubutton {
+    display: none;
+    margin-right: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+    .menubutton {
+        display: block;
+    }
+}
+
+
+.ulclass>li {
+    margin-right: 20px;
+    padding: 5px;
+
+}
+
+
+
+
+
+/*_____Partie1(INTRO)_____*/
+.contenucentre {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    padding-top: 70px;
+}
+
+.colordescription {
+    color: #EAC435;
+}
+
+/*_________________*/
+
+
+
+/*_____Partie2(À PROPOS DE MOI)_____*/
+.apropos {
+    text-align: center;
+    font-weight: bolder;
+    color: #EAC435;
+    margin-top: 10px;
+    padding-top: 100px;
+}
+
+.divparent {
+    display: flex;
+    gap: 50px;
+
+}
+
+
+.textmilieu {
+    width: 50%;
+    color: white;
+
+}
+
+.buttonCV {
+    background-color: #EAC435;
+    color: #122C34;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+
+.buttonCV:hover {
+    background-color: #0FA3B1;
+}
+
+.button-bn {
+    background-color: #0FA3B1;
+    color: #122C34;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/**********image qui bouge************/
+
+.imgcentre {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.imgquibouge1,
+.imgquibouge2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imgquibouge2 {
+    display: none;
+}
+
+.imgcentre:hover .imgquibouge1 {
+    display: none;
+}
+
+.imgcentre:hover .imgquibouge2 {
+    display: block;
+}
+
+/*************************************/
+
+
+
+/*_________________*/
+
+/*_____Partie3(MES PROJETS)_____*/
+
+.contenucentreproj {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.colordescriptionproj {
+    color: #EAC435;
+    padding-top: 650px;
+
+}
+
+.colordescriptionst {
+    color: #EAC435;
+    text-decoration: underline;
+
+}
+
+
+.contenucentreproj {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*________________PROJET1________________*/
+.divparent2 {
+    display: flex;
+}
+
+.imgcentre2 {
+    display: flex;
+    width: 50%;
+    float: left;
+}
+
+.imgprojet {
+    height: 300px;
+}
+
+.voirlesite {
+    color: #EAC435;
+    font-weight: 500;
+
+}
+
+.voirlesite:hover {
+    color: #0FA3B1;
+    position: relative;
+}
+
+/*_________________*/
+
+
+/*___________PROJET2___________*/
+.imgprojet2 {
+    height: 300px;
+    width: 547px;
+    margin-top: 10px;
+
+}
+
+/*_________________*/
+
+
+
+/*_____Partie4(MES COMPÉTENCES)_____*/
+.contenucentrecompet {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 600px;
+}
+
+.colordescriptioncompet {
+    color: #EAC435;
+    padding-top: 300px;
+}
+
+
+/*________taille_______*/
+.competences {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.imgFigures {
+    height: 100px;
+}
+
+.texteFigure {
+    text-align: center;
+}
+
+.taillefigure{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*_________________*/
+
+/*_____Partie5(CONTACTEZ-MOI)_____*/
+.contenucentrecontact {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+.colordescriptioncontact {
+    color: #EAC435;
+    margin-top: 300px;
+}
+
+.contenucentrecontactx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.linkbtn {
+    color: #EAC435;
+    font-weight: bolder;
+}
+
+.linkbtn:hover {
+    color: #0FA3B1;
+}
+
+/*_________________*/
+
+
+
+
+/*-----------footer----------*/
+
+footer {
+    background-color: #0FA3B1;
+    text-align: center;
+    font-weight: bolder;
+
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+
+
+/*---------bar de deroulement----------*/
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #0FA3B1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #EAC435;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #0FA3B1;
+}
+
+
+/*---------bouton aller en haut de la page----------*/
+
+
+
+#btnScrollToTop {
+
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 20px;
+    border: none;
+    background-color: #0FA3B1;
+    /* color: #fff; */
+    cursor: pointer;
+
+    font-size: 13px;
+    color: #122C34;
+    font-weight: 900;
+
+}
+
+#btnScrollToTop:hover {
+    background-color: #EAC435;
+}
+
+
+
+/*-------------Media---------*/
+
+
+
+@media  print, screen and (min-width: 1000px) {
+    .contenucentre{
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .container{
+        background-color: green;
+
+    }
+}

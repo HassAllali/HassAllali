@@ -272,7 +272,6 @@ body {
 
 /*_____Partie4(MES COMPÉTENCES)_____*/
 .contenucentrecompet {
-    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,13 +320,13 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-
+margin-top: 50px;
 
 }
 
 .colordescriptioncontact {
     color: #EAC435;
-    margin-top: 300px;
+
 }
 
 .contenucentrecontactx {

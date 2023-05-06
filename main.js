@@ -4,14 +4,14 @@ let liens = document.querySelectorAll('.lien')
 
 button.addEventListener('click', () => {
     list.classList.toggle("visible")
-    console.log(list.classList.contains("visible"));
+    
 })
 for (const lien of liens) {
     lien.addEventListener('click', () => {
         list.classList.toggle("visible")
     })
 }
-console.log(button.classList)
+
 
 
 

@@ -1,12 +1,16 @@
 let button = document.querySelector('.menubutton')
 let list = document.querySelector('.ulclass')
-
+let liens = document.querySelectorAll('.lien')
 
 button.addEventListener('click', () => {
-    button.style.display = "none"
-    list.style.display = "block"
+    list.classList.toggle("visible")
+    console.log(list.classList.contains("visible"));
 })
-
+for (const lien of liens) {
+    lien.addEventListener('click', () => {
+        list.classList.toggle("visible")
+    })
+}
 console.log(button.classList)
 
 
@@ -34,19 +38,19 @@ document.getElementById("buttonCV").addEventListener("click", function() {
 
 
 
-  window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scrollFunction() };
 
-  function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("btnScrollToTop").style.display = "block";
-      } else {
-          document.getElementById("btnScrollToTop").style.display = "none";
-      }
-  }
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnScrollToTop").style.display = "block";
+    } else {
+        document.getElementById("btnScrollToTop").style.display = "none";
+    }
+}
 
-  document.getElementById("btnScrollToTop").addEventListener("click", function () {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-  });
+document.getElementById("btnScrollToTop").addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
 
 
